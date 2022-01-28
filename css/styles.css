@@ -243,6 +243,10 @@ body {
   }
 }
 
+footer {
+  border-top: var(--bs-primary) 1px solid;
+}
+
 #sideNav {
   padding-left: 0;
   padding-right: 0;
