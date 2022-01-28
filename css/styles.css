@@ -243,9 +243,9 @@ body {
   }
 }
 
-footer {
+/* footer {
   border-top: var(--bs-primary) 1px solid;
-}
+} */
 
 #sideNav {
   padding-left: 0;
