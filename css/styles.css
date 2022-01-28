@@ -75,7 +75,8 @@
 }
 
 [data-theme='dark'] {
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg:#212529;
+  --bs-body-color: #fff;
 }
 
 .switch-wrapper {
