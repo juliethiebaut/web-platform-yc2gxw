@@ -77,10 +77,10 @@
 }
 
 [data-theme='dark'] {
-  --bs-body-bg: #212529;
-  --bs-body-color: #fff;
-  --bs-social-icon-bg: #fff;
-  --bs-social-icon-color: #495057;
+  --bs-body-bg: #171c28;
+  --bs-body-color: #afafbf;
+  --bs-social-icon-bg: #afafbf;
+  --bs-social-icon-color: #171c28;
 }
 
 .switch-wrapper {
