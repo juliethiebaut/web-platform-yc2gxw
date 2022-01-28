@@ -72,11 +72,15 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --bs-social-icon-bg: #fff;
+  --bs-social-icon-color: #495057;
 }
 
 [data-theme='dark'] {
-  --bs-body-bg:#212529;
+  --bs-body-bg: #212529;
   --bs-body-color: #fff;
+  --bs-social-icon-bg: #495057;
+  --bs-social-icon-color: #fff;
 }
 
 .switch-wrapper {
@@ -11836,8 +11840,8 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
+  background-color: var(--bs-social-icon-bg);
+  color: var(--bs-social-icon-color);
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
