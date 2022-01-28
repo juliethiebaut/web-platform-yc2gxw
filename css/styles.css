@@ -92,6 +92,11 @@ h6,
   font-family: var(--bs-bold-font-family);
 }
 
+h3,
+.h3 {
+  color: var(--bs-primary);
+}
+
 h1 {
   font-size: var(--bs-h1-font-size);
 }
