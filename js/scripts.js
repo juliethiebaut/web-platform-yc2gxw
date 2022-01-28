@@ -30,3 +30,47 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 });
+
+var darkSwitch = document.getElementById('switch');
+window.addEventListener('load', function () {
+  if (darkSwitch) {
+    initTheme();
+    darkSwitch.addEventListener('change', function () {
+      resetTheme();
+    });
+  }
+});
+function initTheme() {
+  var darkThemeSelected =
+    localStorage.getItem('switch') !== null &&
+    localStorage.getItem('switch') === 'dark';
+  darkSwitch.checked = darkThemeSelected;
+  darkThemeSelected
+    ? document.body.setAttribute('data-theme', 'dark')
+    : document.body.removeAttribute('data-theme');
+}
+function resetTheme() {
+  if (darkSwitch.checked) {
+    document.body.setAttribute('data-theme', 'dark');
+    localStorage.setItem('switch', 'dark');
+  } else {
+    document.body.removeAttribute('data-theme');
+    localStorage.removeItem('switch');
+  }
+}
+
+/**
+ * Hero type effect
+ */
+const typed = document.querySelector('.typed');
+if (typed) {
+  let typed_strings = typed.getAttribute('data-typed-items');
+  typed_strings = typed_strings.split(',');
+  new Typed('.typed', {
+    strings: typed_strings,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+  });
+}
