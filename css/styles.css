@@ -53,9 +53,11 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-titles-color: #212529;
-  --bs-body-color: #6c757d;
-  --bs-body-bg: #fff;
+  --bs-titles-color: var(--bs-gray-800);
+  --bs-body-color: var(--bs-gray-600);
+  --bs-body-bg: var(--bs-gray-100);
+  --bs-social-icons-bg: var(--bs-gray-800);
+  --bs-social-icons-color: var(--bs-gray-100);
   --bs-h1-font-size: calc(1.725rem + 5.7vw);
   --bs-h2-font-size: calc(1.475rem + 2.7vw);
   --bs-bold-font-weight: 700;
@@ -65,10 +67,11 @@
 }
 
 [data-theme='dark'] {
-  --bs-body-bg: #171c28;
-  --bs-body-color: #afafbf;
-  --bs-social-icon-bg: #ccd6f6;
-  --bs-social-icon-color: #171c28;
+  --bs-titles-color: var(--bs-gray-100);
+  --bs-body-color: var(--bs-gray-100);
+  --bs-body-bg: var(--bs-gray-900);
+  --bs-social-icons-bg: var(--bs-gray-800);
+  --bs-social-icons-color: var(--bs-gray-100);
 }
 
 h1,
@@ -85,7 +88,7 @@ h6,
 .h6 {
   text-transform: uppercase;
   font-weight: var(--bs-bold-font-weight);
-  color: var(--bs-gray-800);
+  color: var(--bs-titles-color);
   font-family: var(--bs-bold-font-family);
 }
 
@@ -240,8 +243,8 @@ body {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: var(--bs-gray-800);
-  color: var(--bs-gray-100);
+  background-color: var(--bs-social-icons-bg);
+  color: var(--bs-social-icons-color);
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
