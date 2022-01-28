@@ -211,6 +211,16 @@ body {
   .desktop-only {
     display: none !important;
   }
+  #sideNav {
+    flex-direction: row;
+  }
+  #sideNav .navbar-collapse {
+    align-items: center;
+  }
+}
+
+.navbar-toggler {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -220,6 +230,12 @@ body {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
+  }
+  #sideNav {
+    flex-direction: column;
+  }
+  #sideNav .navbar-collapse {
+    align-items: flex-start;
   }
 }
 
@@ -231,7 +247,6 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
   height: 100vh;
 }
 #sideNav .navbar-brand {
@@ -246,7 +261,6 @@ body {
 
 #sideNav .navbar-collapse {
   display: flex;
-  align-items: flex-start;
   flex-grow: 0;
   width: 100%;
   margin-bottom: auto;
